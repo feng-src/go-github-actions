@@ -4,7 +4,7 @@ import (
 
     "fmt"
 
-    "github.com/cnych/go-github-actions/hello"
+    "github.com/feng-src/go-github-actions/hello"
 
 )
 
