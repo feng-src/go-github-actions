@@ -12,11 +12,17 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
+      - name: set up go
+        uses: actions/setup-go@v3
+        with:
+          go-versions: 1.17
+      - run: go version
+          
       - name: lint
         uses: golangci/golangci-lint-action@v3
         with:
           version: latest
-          working-directory: ./...
+          working-directory: go-github-actions/
           skip-pkg-cache: true
         
   
