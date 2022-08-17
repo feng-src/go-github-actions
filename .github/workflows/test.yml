@@ -12,8 +12,11 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      - name: run echo
-        run: echo hello world!
+      - name: set up go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.17
+
         
       - name: 构建项目
         run: go build ./...
