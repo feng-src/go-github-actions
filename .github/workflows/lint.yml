@@ -25,7 +25,7 @@ jobs:
         uses: golangci/golangci-lint-action@v3
         with:
           version: latest
-          working-directory: go-github-actions/
+          working-directory: /home/runner/work/go-github-actions/go-github-actions
           skip-pkg-cache: true
           
         
