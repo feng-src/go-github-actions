@@ -18,11 +18,15 @@ jobs:
           go-versions: 1.17
       - run: go version
           
+      - name: output files
+        run: echo $PWD
+          
       - name: lint
         uses: golangci/golangci-lint-action@v3
         with:
           version: latest
           working-directory: go-github-actions/
           skip-pkg-cache: true
+          
         
   
