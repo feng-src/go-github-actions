@@ -4,6 +4,4 @@ package hello
 
 func Greet() string {
    cda
-    return "Hello GitHub Actions"
-
 }
